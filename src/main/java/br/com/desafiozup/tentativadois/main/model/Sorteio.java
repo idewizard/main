@@ -33,7 +33,7 @@ public class Sorteio {
 	private Pessoa pessoa;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn( name = "fk_idvalor_sorteado" , foreignKey = @ForeignKey ( name = "fk_idvalor_sorteado"))
+	@JoinColumn( name = "fk_idvalor_sorteado" , foreignKey = @ForeignKey ( name = "fk_idvalor_sorteado") , unique = true)
 	private ValorSorteado valorSorteado;
 	
 }
